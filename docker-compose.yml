@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Illy_Vending
+    ports:
+      - "80:80"
+      - "5173:5173"
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+      - /var/www/html/node_modules
+    command: bash -c   /var/www/html/start.sh
+    env_file: .env
