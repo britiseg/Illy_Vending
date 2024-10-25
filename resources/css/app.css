@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.lighit_beige {
+    background-color: #F6F0EB;
+}
+
+.frame-child {
+    width: 0.5px;
+    position: relative;
+    border-right: 0.5px solid #a6938d;
+    box-sizing: border-box;
+    height: 32.5px;
+}
+
+.logo-illysvg-1-1-icon {
+    width: 32px;
+    position: relative;
+    height: 32px;
+    object-fit: cover;
+}
+
+.frame-4-1-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.title {
+    flex: 1;
+    position: relative;
+    line-height: 115%;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.navigation-link {
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+    background-color: #d12420;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    min-width: 100px;
+}
+
+.stateget-in-touch {
+    width: 100%;
+    position: relative;
+    background-color: #f6f0eb;
+    border-bottom: 0.5px solid #c6b8ae;
+    box-sizing: border-box;
+    height: 49px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0px 8px 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: Manrope;
+}
