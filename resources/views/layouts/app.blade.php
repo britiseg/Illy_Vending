@@ -20,9 +20,11 @@
     <div class="min-h-screen">
 
 
-        @unless(request()->routeIs('landing'))
+        {{-- @unless(request()->routeIs('landing'))
             @include('layouts.navigation')
-        @endunless
+        @endunless --}}
+
+        @include('layouts.header')
 
         <!-- Page Heading -->
         {{-- @if (isset($header))
