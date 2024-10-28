@@ -45,7 +45,6 @@
         event.currentTarget.classList.add('font-bold');
     }
 
-    // Función para hacer scroll en la barra de navegación
     function scrollNav(distance) {
         const navBar = document.getElementById('navBar');
         navBar.scrollBy({ left: distance, behavior: 'smooth' });
@@ -56,19 +55,16 @@
         const leftArrow = document.getElementById('leftArrow');
         const rightArrow = document.getElementById('rightArrow');
 
-        // Verifica si hay desplazamiento horizontal disponible
         if (navBar.scrollWidth > navBar.clientWidth) {
-            // Muestra u oculta las flechas según la posición de desplazamiento
             leftArrow.classList.toggle('hidden-arrows', navBar.scrollLeft === 0);
             rightArrow.classList.toggle('hidden-arrows', navBar.scrollLeft + navBar.clientWidth >= navBar.scrollWidth);
         } else {
-            // Oculta ambas flechas si no hay desplazamiento horizontal
             leftArrow.classList.add('hidden-arrows');
             rightArrow.classList.add('hidden-arrows');
         }
     }
 
-    // Llama a toggleArrows al cargar la página para establecer el estado inicial
+
     window.addEventListener('load', toggleArrows);
     window.addEventListener('resize', toggleArrows);
 </script>
