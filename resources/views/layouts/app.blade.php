@@ -20,11 +20,20 @@
     <div class="min-h-screen">
 
 
-        {{-- @unless(request()->routeIs('landing'))
-            @include('layouts.navigation')
-        @endunless --}}
+
 
         @include('layouts.header')
+
+        <div
+  class="container mx-auto mt-4 text-center dark:text-white"
+  style="height: 2000px">
+  <p class="mb-4">
+    Start scrolling the page and a strong
+    <strong>"Back to top" button </strong> will appear in the
+    <strong>bottom right corner</strong> of the screen.
+  </p>
+  <p>Click this button and you will be taken to the top of the page.</p>
+</div>
 
         <!-- Page Heading -->
         {{-- @if (isset($header))
