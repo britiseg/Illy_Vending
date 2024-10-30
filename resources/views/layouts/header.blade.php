@@ -30,7 +30,9 @@
             <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
     </button>
-
+ <div class="flex justify-center">
+        <img src="{{ asset('images/program/machine_1.jpeg') }}" alt="Coffee Machine" class="w-full h-auto lg:h-96 object-cover shadow-md">
+    </div>
     <div class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide" id="navBar" onscroll="toggleArrows()">
         <nav class="flex space-x-6 justify-left md:justify-center">
             <a href="#" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
@@ -118,7 +120,7 @@
 
     window.addEventListener("scroll", function() {
     const navbar = document.getElementById("navbar");
-    if (window.scrollY > 50) {
+    if (window.scrollY > 370) {
         // Muestra el navbar solo cuando se baja 50px        navbar.classList.add("scrolled");
         navbar.classList.remove("hidden-navbar");
     } else {

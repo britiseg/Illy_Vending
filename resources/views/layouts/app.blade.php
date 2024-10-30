@@ -21,10 +21,15 @@
 
 
 
+         <!-- Page Heading -->
 
         @include('layouts.header')
 
-        <div
+        {{-- the prepango program --}}
+
+        @include('program.main')
+
+        {{-- <div
   class="container mx-auto mt-4 text-center dark:text-white"
   style="height: 2000px">
   <p class="mb-4">
@@ -33,7 +38,10 @@
     <strong>bottom right corner</strong> of the screen.
   </p>
   <p>Click this button and you will be taken to the top of the page.</p>
-</div>
+</div> --}}
+
+
+
 
         <!-- Page Heading -->
         {{-- @if (isset($header))

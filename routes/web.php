@@ -16,3 +16,4 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {return view('/layouts/app');});
+Route::get('/program', function () { return view('main'); });

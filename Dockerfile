@@ -52,6 +52,9 @@ RUN npm install vite --save-dev
 # Instalar Tailwind CSS, PostCSS y Autoprefixer
 RUN npm install tailwindcss postcss autoprefixer --save-dev
 
+# Instalar dependencias (incluyendo Font Awesome)
+RUN npm install && npm install @fortawesome/fontawesome-free
+
 
 # Compilar assets con Vite (en modo producción)
 RUN npm run build

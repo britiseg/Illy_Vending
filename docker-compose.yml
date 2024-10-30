@@ -12,4 +12,5 @@ services:
       - /var/www/html/vendor
       - /var/www/html/node_modules
     command: bash -c   /var/www/html/start.sh
+         sh -c "npm install && npm install @fortawesome/fontawesome-free && npm run dev"
     env_file: .env
