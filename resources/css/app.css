@@ -9,6 +9,10 @@ body {
     line-height: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn_primary {
     color: white;
     font-size: 18px;

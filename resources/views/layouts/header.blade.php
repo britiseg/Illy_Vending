@@ -35,21 +35,11 @@
     </div>
     <div class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide" id="navBar" onscroll="toggleArrows()">
         <nav class="flex space-x-6 justify-left md:justify-center">
-            <a href="#" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
+            <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
             <a href="#" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
+            <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
             <a href="#" class="nav-item" onclick="selectNavItem(event)">New!</a>
             <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
-            {{-- <a href="#" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">New!</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
-            <a href="#" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">New!</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a> --}}
         </nav>
     </div>
 
