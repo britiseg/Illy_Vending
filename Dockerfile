@@ -1,12 +1,11 @@
-FROM php:8.1-apache
+FROM php:8.1-apache-bullseye
 ENV APACHE_SERVERNAME Illy_Vending
 
 # Instalar dependencias adicionales de PHP
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
-    nodejs \
-    npm \
+    curl \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -28,7 +27,7 @@ WORKDIR /var/www/html/
 # Copiar Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-# Crear el proyecto Laravel (solo si no tienes un proyecto creado)
+# Crear el proyecto Laravel (esto generará el archivo package.json)
 RUN composer create-project --prefer-dist laravel/laravel .
 
 # Crear las carpetas necesarias para Laravel
@@ -37,24 +36,19 @@ RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
 # Establecer permisos adecuados
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
+# Instalar Node.js versión 18 y npm
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
+
+# Instalar dependencias de npm y Vite después de que Laravel haya sido creado
+RUN npm install \
+    && npm install vite --save-dev \
+    && npm install tailwindcss postcss autoprefixer --save-dev \
+    && npm install @fortawesome/fontawesome-free
+
 # Copiar el script de inicio
 COPY start.sh /var/www/html/start.sh
-
-# Hacer ejecutable el script de inicio
 RUN chmod +x /var/www/html/start.sh
-
-# Instalar dependencias de npm
-RUN npm install
-
-# Instalar Vite y sus dependencias
-RUN npm install vite --save-dev
-
-# Instalar Tailwind CSS, PostCSS y Autoprefixer
-RUN npm install tailwindcss postcss autoprefixer --save-dev
-
-# Instalar dependencias (incluyendo Font Awesome)
-RUN npm install && npm install @fortawesome/fontawesome-free
-
 
 # Compilar assets con Vite (en modo producción)
 RUN npm run build
