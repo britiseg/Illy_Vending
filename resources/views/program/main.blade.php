@@ -15,18 +15,35 @@
                 <span class="text-primary-red">100% Arabica</span> whole beans sourced from around the world, delivering a premium coffee experience.
             </p>
         </div>
+        <div class="flex justify-center p-4 order-2 sm:order-1">
+            <img src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" class="w-full h-64 md:h-80 lg:h-96 object-cover">
+        </div>
 
+
+
+    </div>
+    <div class="Frame1307814355 w-[390px] h-[296px] px-10 py-[62px] bg-gradient-to-tl from-[#311001] via-[#5e2e0f] to-[#d19236] flex-col justify-center items-center gap-10 inline-flex">
+            <div class="Group14602 w-[342px] h-24 relative">
+              <div class="TreatYourPeopleToToday w-[342px] left-0 top-0 absolute text-center text-white text-[32px] font-semibold leading-[48px]">Treat your people     to         today</div>
+            </div>
+            <div class="Button self-stretch h-14 px-4 py-2.5 bg-[#d12420] rounded-[35px] shadow justify-center items-center gap-2 inline-flex">
+                <button type="button" id="btn-get-in-touch" class=" bottom-5 left-5  rounded-full bg-primary-red p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-secondary-red hover:shadow-lg focus:bg-secondary-red focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-red active:shadow-lg">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
 
 
         <div class="flex justify-center p-4">
             <img src="{{ asset('images/program/satisfaction_1.png') }}" alt="Coffee Machine" class="w-full h-64 md:h-80 lg:h-96 object-cover">
         </div>
-    </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
 
         <div class="flex justify-center p-4 order-2 sm:order-1">
             <img src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" class="w-full h-64 md:h-80 lg:h-96 object-cover">
         </div>
+
 
 
         <div class="flex flex-col items-center justify-center text-left p-4 order-1 sm:order-2">
