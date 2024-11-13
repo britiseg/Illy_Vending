@@ -1,7 +1,7 @@
 <div class="container py-4 mx-auto">
     <div class="text-center mb-8">
         <span class="text-center justify-center align-center mx-auto mb-2 inline" style="font-size: 36px;line-height: 125%;">Discover What Makes
-            <p class="mt-4 font-bold text-red-600 inline" style="font-style: normal;font-weight: 800; font-size: 42px;line-height: 150%;">
+            <p class="mt-4 font-bold text-red-600 inline" style="font-style: italic;font-weight: 800; font-size: 42px;line-height: 150%;">
         illy </p> an Exceptional Partner
         </span>
     </div>
