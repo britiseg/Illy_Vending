@@ -9,24 +9,25 @@
                 The New, ‘Ready to Drink’, Cold Brew Cans Vending Machine
             </span>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-2">
-                <div class="flex flex-col text-left">
+                <div class="flex flex-col gap-2">
                     <p class="label_new">
                         These ready to drink beverages are expertly crafted to offer coffee lovers a refreshing way to enjoy coffee anywhere they want it. The unit features all three illy cold brew varieties in convenient, on-the-go, 8.5oz slim cans. Pick from a wide selection of espresso beverages, delivered quickly and conveniently.
                     </p>
+                    <br>
                     <div class="mb-2">
-                        <img src="images/new/FrameA.png" class="hidden lg:block mt-2" alt="">
+                        <img src="images/new/FrameA.png" class="hidden lg:block" alt="">
                     </div>
                 </div>
-                <div class="flex flex-col text-left">
+                <div class="flex flex-col gap-2">
                     <p class="label_new">
                         This machine features a modern visual display, 9” color touchscreen and full motion video. It offers product information, integrated cashless payment, multi-product purchases from a single transaction and digital advertising
                     </p>
-                    <div class="mb-2">
-                        <img src="{{ asset('images/new/illy_mobile.png') }}" class="block lg:hidden" alt="Coffee" class="object-cover">
+                    <div class="mb-2 mt-0">
+                        <img src="images/new/illy_mobile.png" class="block lg:hidden object-cover" alt="Coffee">
 
-                        <img src="images/new/FrameA.png" class="block lg:hidden" alt="">
+                        <img src="images/new/FrameA.png" class="block lg:hidden object-cover" alt="Frame">
 
-                        <img src="images/new/FrameB.png" class="mt-2" alt="">
+                        <img src="images/new/FrameB.png" alt="Frame B" class="object-cover">
                     </div>
                 </div>
             </div>
