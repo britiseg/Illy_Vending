@@ -19,8 +19,6 @@
 <body class="bg-beige font-sans antialiased">
     <div class="min-h-screen">
 
-
-
          <!-- Page Heading -->
 
         @include('layouts.header')
@@ -30,13 +28,18 @@
         <div id="prepango-program">
             @include('program.main')
         </div>
-
+        {{-- the illy experience --}}
+        <div id="prepango-experience">
+            @include('experience.main')
+        </div>
 
         <div id="prepango-machine">
             @include('machine.main')
         </div>
-
-
+        {{-- the new --}}
+        <div id="prepango-new">
+            @include('new.main')
+        </div>
 
     </div>
 
