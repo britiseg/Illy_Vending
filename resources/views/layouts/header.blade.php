@@ -13,11 +13,11 @@
 </div>
 <div id="navbar" class="fixed top-[34px] left-0 right-0 bg-med_beige py-4 px-6 shadow-md transition-all duration-300 ease-in-out z-20 hidden-navbar">
     <nav class="flex space-x-6 justify-left md:justify-center">
-        <a href="#" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
-        <a href="#" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
-        <a href="#" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
-        <a href="#" class="nav-item" onclick="selectNavItem(event)">New!</a>
-        <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
+               <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
+            <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
+            <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
+            <a href="#prepango-new" class="nav-item" onclick="selectNavItem(event)">New!</a>
+            <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
     </nav>
 </div>
 
@@ -29,11 +29,11 @@
         </svg>
     </button>
  <div class="flex justify-center">
-        <img src="{{ asset('images/program/machine_1.jpeg') }}" alt="Coffee Machine" class="w-full h-auto lg:h-96 object-cover shadow-md">
+        <img src="{{ asset('images/program/machine_1.png') }}" alt="Coffee Machine" class="w-full h-auto lg:h-[837px] object-cover shadow-md">
     </div>
 
 
-    <div class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide" id="navBar" onscroll="toggleArrows()">
+    <div id="navBar" class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide"  onscroll="toggleArrows()">
         <nav class="flex space-x-6 justify-left md:justify-center">
             <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
             <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
@@ -59,10 +59,22 @@
     </span>
     </button>
 <script>
-    function selectNavItem(event) {
-        document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('font-bold'));
-        event.currentTarget.classList.add('font-bold');
-    }
+  function selectNavItem(event) {
+    // Obtén el texto o href del elemento clicado
+    const targetText = event.currentTarget.innerText;
+    const targetHref = event.currentTarget.getAttribute("href");
+
+    // Remueve la clase 'font-bold' de todos los nav-items
+    document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('font-bold'));
+
+    // Añade la clase 'font-bold' a los elementos con el mismo texto o href
+    document.querySelectorAll('.nav-item').forEach(item => {
+        if (item.innerText === targetText || item.getAttribute("href") === targetHref) {
+            item.classList.add('font-bold');
+        }
+    });
+}
+
 
     function scrollNav(distance) {
         const navBar = document.getElementById('navBar');
@@ -105,9 +117,11 @@
         alert("Redirigir a sección de contacto o abrir modal.");
     }
 
+
+
     window.addEventListener("scroll", function() {
     const navbar = document.getElementById("navbar");
-    if (window.scrollY > 370) {
+    if (window.scrollY > 800) {
         // Muestra el navbar solo cuando se baja 50px        navbar.classList.add("scrolled");
         navbar.classList.remove("hidden-navbar");
     } else {

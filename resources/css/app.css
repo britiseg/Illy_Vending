@@ -51,6 +51,7 @@ html {
     font-family: 'Manrope', sans-serif;
     white-space: nowrap;
     padding-bottom: 4px;
+    transition: color 0.3s ease;
 }
 
 .nav-item::after {

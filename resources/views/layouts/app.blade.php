@@ -15,33 +15,23 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @stack('styles') <!-- Si necesitas agregar más estilos específicos en otras vistas -->
+    @include('layouts.header')
 </head>
 <body class="bg-beige font-sans antialiased">
-    <div class="min-h-screen">
 
-         <!-- Page Heading -->
-
-        @include('layouts.header')
-
-        {{-- the prepango program --}}
-
-        <div id="prepango-program">
-            @include('program.main')
-        </div>
-        {{-- the illy experience --}}
-        <div id="prepango-experience">
-            @include('experience.main')
-        </div>
-
-        <div id="prepango-machine">
-            @include('machine.main')
-        </div>
-        {{-- the new --}}
-        <div id="prepango-new">
-            @include('new.main')
-        </div>
-
+    <div id="prepango-program" class="min-h-screen">
+        @include('program.main')
     </div>
+    <div id="prepango-experience" class="min-h-screen">
+        @include('experience.main')
+    </div>
+    <div id="prepango-machine" class="min-h-screen">
+        @include('machine.main')
+    </div>
+    <div id="prepango-new" class="min-h-screen">
+        @include('new.main')
+    </div>
+
 
 </body>
 </html>
