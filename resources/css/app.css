@@ -149,3 +149,87 @@ html {
     font-size: 14px;
     border-radius: 9999px;
 }
+.header_experience_red {
+    height: 30px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    color: #D12420;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.card {
+    height: 120px;
+    width: 240px;
+    margin-left: -45px;
+}
+.label_new {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.header_black_new {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.label_new_premium {
+    height: 54px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-bottom: 4%;
+}
+
+.header_red {
+    align-self: stretch;
+    color: #F80000;
+    font-size: 20px;
+    font-family: Manrope;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.label_new_end {
+     font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
