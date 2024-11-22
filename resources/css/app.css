@@ -13,6 +13,22 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* --Typography-- */
+
+.display {
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 800;
+}
+
+.desktop_body_txt {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
 .btn_primary {
     color: white;
     font-size: 18px;

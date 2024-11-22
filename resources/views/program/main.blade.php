@@ -7,10 +7,10 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
 
         <div class="flex flex-col items-center justify-center text-left p-4">
-            <p class="mt-4 text-gray-600">
+            <p class="mt-4 desktop_body_txt text-gray-600">
                 illy Caffè North America and Prepango, a national operator of specialty vending machines, have partnered to introduce an innovative automated espresso coffee concept—marking the first of its kind for both illy and Prepango in the USA.
             </p>
-            <p class="mt-4 text-gray-600">
+            <p class="mt-4 desktop_body_txt text-gray-600">
                 Unlike traditional coffee vending machines that serve instant coffee, our machines grind, brew, and serve illy’s signature blend of
                 <span class="text-primary-red">100% Arabica</span> whole beans sourced from around the world, delivering a premium coffee experience.
             </p>
