@@ -1,9 +1,36 @@
 /* resources/css/app.css */
 
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .responsive-padding {
+        @apply px-6 py-5 md:pb-10;
+      }
+    .header_1{
+        @apply text-black font-semibold text-32 leading-[150%] md:font-bold md:text-52 md:leading-[78px]
+    }
+    .header_2 {
+      @apply text-black font-normal font-manrope text-24 leading-[150%] md:text-36 md:leading-[54px] md:pl-10 md:pt-10;
+    }
+
+    .body_txt {
+      @apply text-black font-light font-manrope text-16 leading-[150%] md:text-20 md:leading-[30px];
+    }
+
+    .btn_red {
+        @apply w-[321px] h-14 px-4 py-2.5 bg-[#d12420] rounded-[35px] shadow inline-flex justify-center items-center gap-2 cursor-pointer text-white text-xl font-semibold font-manrope capitalize leading-[25px];
+      }
+    .btn_red:hover {
+        @apply bg-[#f00]; /* Cambia a un color más claro al hacer hover */
+      }
+  }
+
+
 body {
     margin: 0;
     line-height: normal;
@@ -48,6 +75,19 @@ html {
     /* Sombra ligera */
 }
 
+.navigation_bold{
+    font-weight: 700;
+}
+.navigation{
+    color: var(--Black, #000);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-transform: capitalize;
+}
 .nav-bar {
     border-width: 0.5px;
     border-color: bisque;
@@ -64,7 +104,6 @@ html {
 
 .nav-item {
     position: relative;
-    font-family: 'Manrope', sans-serif;
     white-space: nowrap;
     padding-bottom: 4px;
     transition: color 0.3s ease;
@@ -132,16 +171,6 @@ html {
 }
 
 
-/* Estilos del botón flotante "Get in Touch" */
-
-#btn-get-in-touch {
-    color: white;
-    padding: 12px 16px;
-    font-size: 14px;
-    border-radius: 9999px;
-}
-
-
 /* Estilos del botón "Back to Top" */
 
 #btn-back-to-top {
@@ -149,9 +178,10 @@ html {
     font-size: 14px;
     border-radius: 9999px;
 }
+
+/* --- stytles ----- */
 .header_experience_red {
     height: 30px;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -166,13 +196,22 @@ html {
 
 }
 
+.text-fade1 {
+    background: linear-gradient(to top left, #311001, #5e2e0f, #d19236);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-clip: text;
+  }
+
+
 .card {
     height: 120px;
     width: 240px;
     margin-left: -45px;
 }
 .label_new {
-    font-family: 'Manrope';
     font-style: normal;
     font-size: 20px;
     color: #000000;
@@ -183,7 +222,6 @@ html {
 }
 
 .header_black_new {
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -197,7 +235,6 @@ html {
 
 .label_new_premium {
     height: 54px;
-    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;

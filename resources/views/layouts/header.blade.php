@@ -12,8 +12,8 @@
     </div>
 </div>
 <div id="navbar" class="fixed top-[34px] left-0 right-0 bg-med_beige py-4 px-6 shadow-md transition-all duration-300 ease-in-out z-20 hidden-navbar">
-    <nav class="flex space-x-6 justify-left md:justify-center">
-               <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
+    <nav class="flex space-x-6 justify-left md:justify-center navigation">
+            <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
             <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
             <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
             <a href="#prepango-new" class="nav-item" onclick="selectNavItem(event)">New!</a>
@@ -34,7 +34,7 @@
 
 
     <div id="navBar" class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide"  onscroll="toggleArrows()">
-        <nav class="flex space-x-6 justify-left md:justify-center">
+        <nav class="flex space-x-6 justify-left md:justify-center  navigation">
             <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
             <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
             <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
