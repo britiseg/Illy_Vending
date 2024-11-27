@@ -29,9 +29,9 @@
         <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
             <div class="header_1 text-white mb-2 md:mb-0">Treat your people</div>
             <div class="flex items-center gap-2">
-                <div class="header_1">to</div>
+                <div class="header_1 text-white">to</div>
                 <div class="w-[63px] h-[50px] bg-no-repeat bg-center bg-contain" style="background-image: url('/images/illy_white.svg');"></div>
-                <div class="header_1">today</div>
+                <div class="header_1 text-white">today</div>
             </div>
         </div>
 
@@ -182,13 +182,13 @@
     </div>
     <div class="responsive-padding grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-        <div class="flex flex-col justify-center ">
+        <div class="flex flex-col justify-center order-2 md:order-1 ">
             <h2 class="header_2 text-yellow-400">
                 can we get a quote or testimonial here?
             </h2>
 
         </div>
-        <div class="flex flex-col justify-center ">
+        <div class="flex flex-col justify-center order-1 sm:order-2">
             <img class="Image  w-full h-[214px] md:h-[255px] relative"src="{{ asset('images/program/journey_2.png') }}"  />
         </div>
 
