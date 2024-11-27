@@ -13,6 +13,8 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-CMOir4kx.css') }}">
+    <script src="{{ asset('build/assets/app-C0pLGla2.js') }}" defer></script>
 
     @stack('styles') <!-- Si necesitas agregar más estilos específicos en otras vistas -->
     @include('layouts.header')
