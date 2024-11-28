@@ -36,7 +36,8 @@
         </div>
 
         <div id="btn_getInTouch" class="btn_red mt-4 md:mt-0">
-            Get in touch
+            <a href="{{ route('get-in-touch') }}">Get in touch</a>
+
         </div>
     </div>
 

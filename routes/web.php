@@ -15,5 +15,8 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {return view('/layouts/app');});
+
+Route::get('/', function () { return view('/layouts/main'); })->name('home');
 Route::get('/program', function () { return view('main'); });
+Route::get('/get-in-touch', function () { return view('get-in-touch.main'); })->name('get-in-touch');
+

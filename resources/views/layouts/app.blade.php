@@ -13,27 +13,19 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CMOir4kx.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-De0JViym.css') }}">
     <script src="{{ asset('build/assets/app-C0pLGla2.js') }}" defer></script>
 
-    @stack('styles') <!-- Si necesitas agregar más estilos específicos en otras vistas -->
-    @include('layouts.header')
+    @stack('styles')
+
 </head>
 <body class="bg-beige font-sans antialiased">
+    @include('layouts.header')
 
-    <div id="prepango-program" class="min-h-screen">
-        @include('program.main')
-    </div>
-    <div id="prepango-experience" class="min-h-screen">
-        @include('experience.main')
-    </div>
-    <div id="prepango-machine" class="min-h-screen">
-        @include('machine.main')
-    </div>
-    <div id="prepango-new" class="min-h-screen">
-        @include('new.main')
-    </div>
+    <main>
+        @yield('content')
+    </main>
 
+    @include('layouts.footer')
 
-</body>
 </html>

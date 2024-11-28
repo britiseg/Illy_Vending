@@ -6,9 +6,10 @@
             <img src="{{ asset('images/logo_prepango.png') }}" alt="Logo Prepango" class="h-8">
             <img src="{{ asset('images/logo_illy.png') }}" alt="Logo Illy" class="h-8">
         </div>
-        <button type="button" class="bg-primary-red text-white font-semibold px-3 py-2 text-sm shadow-sm hover:bg-secondary-red focus:outline-none">
+        <a href="{{ route('get-in-touch') }}" class="bg-primary-red text-white font-semibold px-3 py-2 text-sm shadow-sm hover:bg-secondary-red focus:outline-none">
             Get In Touch
-        </button>
+        </a>
+
     </div>
 </div>
 <div id="navbar" class="fixed top-[34px] left-0 right-0 bg-med_beige py-4 px-6 shadow-md transition-all duration-300 ease-in-out z-20 hidden-navbar">
@@ -17,7 +18,7 @@
             <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
             <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
             <a href="#prepango-new" class="nav-item" onclick="selectNavItem(event)">New!</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
+            <a href="{{ route('get-in-touch') }}" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
     </nav>
 </div>
 
@@ -28,18 +29,20 @@
             <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
     </button>
+    @unless (Route::is('get-in-touch'))
  <div class="flex justify-center">
         <img src="{{ asset('images/program/machine_1.png') }}" alt="Coffee Machine" class="w-full h-auto lg:h-[837px] object-cover shadow-md">
     </div>
+      @endunless
 
 
-    <div id="navBar" class="w-full bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide"  onscroll="toggleArrows()">
+    <div id="navBar" class="w-full mt-[40px] bg-med_beige py-4 px-6 nav-bar overflow-x-auto scrollbar-hide"  onscroll="toggleArrows()">
         <nav class="flex space-x-6 justify-left md:justify-center  navigation">
             <a href="#prepango-program" class="nav-item font-bold" onclick="selectNavItem(event)">The Prepango Program</a>
             <a href="#prepango-experience" class="nav-item" onclick="selectNavItem(event)">The Illy Experience</a>
             <a href="#prepango-machine" class="nav-item" onclick="selectNavItem(event)">Machine Details</a>
             <a href="#prepango-new" class="nav-item" onclick="selectNavItem(event)">New!</a>
-            <a href="#" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
+              <a href="{{ route('get-in-touch') }}" class="nav-item" onclick="selectNavItem(event)">Get In Touch</a>
         </nav>
     </div>
 
@@ -51,13 +54,16 @@
 </div>
 
 
-<button type="button" data-twe-ripple-init data-twe-ripple-color="light" class="!fixed bottom-5 end-5 hidden rounded-full bg-dark_brown p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-med_brown hover:shadow-lg focus:bg-med_brown focus:shadow-lg focus:outline-none focus:ring-0 active:bg-dark_brown active:shadow-lg" id="btn-back-to-top">
-    <span class="[&>svg]:w-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-        </svg>
-    </span>
-    </button>
+
+
+<button type="button" data-twe-ripple-init data-twe-ripple-color="light" class="!fixed right-0 top-1/2 hidden -translate-y-1/2 rounded-full bg-dark_brown p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-med_brown hover:shadow-lg focus:bg-med_brown focus:shadow-lg focus:outline-none focus:ring-0 active:bg-dark_brown active:shadow-lg" id="btn-back-to-top" >
+<span class="[&>svg]:w-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+    </svg>
+</span>
+</button>
+
 <script>
   function selectNavItem(event) {
     // Obtén el texto o href del elemento clicado
