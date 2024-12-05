@@ -30,12 +30,17 @@
                 placeholder="Your Message"
             ></textarea>
         </div>
-        <button
+        <button type="button" onclick="window.location.href='/'" class="bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-red-700" >
+            Send
+        </button>
+
+
+        {{-- <button
             type="submit"
             class="bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-red-700"
         >
             Send
-        </button>
+        </button> --}}
     </form>
 </div>
 @endsection
