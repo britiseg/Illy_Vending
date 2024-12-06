@@ -13,13 +13,13 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build/assets/app-De0JViym.css') }}">
-    <script src="{{ asset('build/assets/app-C0pLGla2.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ asset('build/assets/app-B4ZR4d7S.css') }}">
+    <script src="{{ asset('build/assets/app-Cv1ljbyC.js') }}" defer></script>
 
     @stack('styles')
 
 </head>
-<body class="bg-beige font-sans antialiased">
+<body class=" font-sans antialiased {{ Route::is('get-in-touch') ? ' bg-mirrored' : 'bg-beige'  }}">
     @include('layouts.header')
 
     <main>

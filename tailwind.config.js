@@ -36,7 +36,9 @@ module.exports = {
             },
             backgroundImage: {
                 'fade': 'linear-gradient(to top left, #311001, #5e2e0f, #d19236)',
+                // 'mirrored': "url('/images/cup_coffe.png')",
             },
+
         },
     },
     plugins: [],
