@@ -296,14 +296,15 @@ html, body {
     flex-direction: column;
     align-items: center;
 
-    position: fixed;
-    top: 6.5rem;
-    left: 66.6%;
+    /* position: fixed; */
+    margin-left: 66.6%;
+  margin-top: 6.5rem;
+
     transform: translateX(-50%);
     z-index: 9999;
 
     /* Estilo para pantallas grandes (Web) */
-    @media (min-width: 1024px) {
+    @media (min-width: 1688px) {
         width: 631px;
         top: 6.5rem;
         left: 66.6%;
@@ -325,24 +326,3 @@ html, body {
 }
 
 
-/* .frame_form {
-    border-radius: 20px;
-    background: var(--White, #FFF);
-    box-shadow: -7px -8px var(--sds-size-depth-800) var(--sds-size-depth-negative-100) rgba(212, 212, 212, 0.10),
-                8px -8px var(--sds-size-depth-100) var(--sds-size-depth-negative-100) rgba(155, 155, 157, 0.05);
-
-    display: flex;
-    width: 631px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-    flex-direction: column;
-    align-items: center;
-
-
-    position: fixed;
-    top: 6.5rem;
-    left: 66.6%;
-    transform: translateX(-50%);
-    z-index: 9999;
-} */

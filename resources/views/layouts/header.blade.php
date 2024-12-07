@@ -23,7 +23,8 @@
         ['href' => '#prepango-experience', 'text' => 'The Illy Experience', 'id' => '2'],
         ['href' => '#prepango-machine', 'text' => 'Machine Details', 'id' => '3'],
         ['href' => '#prepango-new', 'text' => 'New!', 'id' => '4'],
-        ['href' => route('get-in-touch'), 'text' => 'Get In Touch', 'id' => '5']
+        ['href' => '#prepango-get-in-touch', 'text' => 'Get In Touch!', 'id' => '5'],
+        // ['href' => route('get-in-touch'), 'text' => 'Get In Touch', 'id' => '5']
     ]"
 />
 </div>
@@ -42,7 +43,8 @@
     ['href' => '#prepango-experience', 'text' => 'The Illy Experience', 'id' => '2'],
     ['href' => '#prepango-machine', 'text' => 'Machine Details', 'id' => '3'],
     ['href' => '#prepango-new', 'text' => 'New!', 'id' => '4'],
-    ['href' => route('get-in-touch'), 'text' => 'Get In Touch', 'id' => '5']
+    ['href' => '#prepango-get-in-touch', 'text' => 'Get In Touch!', 'id' => '5'],
+    // ['href' => route('get-in-touch'), 'text' => 'Get In Touch', 'id' => '5']
 ]"
 />
 

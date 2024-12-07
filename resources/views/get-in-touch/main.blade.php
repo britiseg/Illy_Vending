@@ -1,10 +1,10 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 @section('content')
 
-<body class="relative  min-h-screen text-white flex items-center justify-center">
+<body class="relative  min-h-screen text-white flex items-center justify-center"> --}}
     <div class="container  ">
-      {{-- <div class="frame_form"> --}}
+
 
 
 <form class=" mx-auto frame_form w-full">
@@ -40,7 +40,7 @@
         </select>
     </div>
 
-    <!-- Textarea: Message -->    <div class="relative z-0 w-full mb-5 group">
+  <div class="relative z-0 w-full mb-5 group">
 
         <textarea id="message" name="message" rows="4"
             class="block w-full h-[80px] py-2.5 px-3 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600"
@@ -56,7 +56,6 @@
         <span class="text-20 text-gray-500 text-center"> ☎︎︎  (###) ### - ###</span>
   </form>
 
-      {{-- </div> --}}
     </div>
-</body>
-@endsection
+{{-- </body>
+@endsection --}}

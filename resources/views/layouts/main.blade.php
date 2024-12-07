@@ -13,4 +13,7 @@
 <div id="prepango-new" class="min-h-screen">
     @include('new.main')
 </div>
+<div id="prepango-get-in-touch" class="min-h-screen">
+    @include('get-in-touch.main')
+</div>
 @endsection
