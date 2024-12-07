@@ -1,6 +1,6 @@
 <!-- resources/views/program/main.blade.php -->
 
-<div class=" ">
+<div class="container">
 
 
 
@@ -11,11 +11,11 @@
                 Introducing Your Luxury Automated Coffee Solution
             </h2>
 
-            <div class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10">
                 illy Caffè North America and Prepango, a national operator of specialty vending machines, have partnered to introduce an innovative automated espresso coffee concept—marking the first of its kind for both illy and Prepango in the USA.<br><br>
                 Unlike traditional coffee vending machines that serve instant coffee, our machines grind, brew, and serve illy’s signature blend of
                 <span class="text-primary-red">100% Arabica</span> whole beans sourced from around the world, delivering a premium coffee experience.
-            </div>
+            </p>
         </div>
 
         <div class="flex justify-center order-2 sm:order-1">
@@ -51,9 +51,9 @@
 
         <div class="flex flex-col items-center justify-center text-left order-1 sm:order-2">
             <h2 class="header_2 responsive-padding">Maximum Satisfaction with a Small Footprint</h2>
-            <div class="body_txt responsive-padding  ">ur compact machines fit seamlessly into various spaces, ensuring maximum satisfaction with minimal disruption.
+            <p class="body_txt responsive-padding  ">ur compact machines fit seamlessly into various spaces, ensuring maximum satisfaction with minimal disruption.
 
-            </div>
+            </p>
 
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-6 justify-center">
                 <div class="flex flex-col items-center">
@@ -137,30 +137,30 @@
                 <span class="text-primary-red">1 </span>
                 Connect
             </h2>
-            <div class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10">
                 Connect with us to select the perfect program tailored to your needs and budget.
 
-            </div>
+            </p>
         </div>
         <div class="flex flex-col justify-center ">
             <h2 class="header_2">
                 <span class="text-primary-red">2 </span>
                 Select
             </h2>
-            <div class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10">
                 Choose your ideal location, and we’ll handle everything: instillation, manages refills, cleaning, monitoring, and maintenance - all to ensure a seamless operation.
 
-            </div>
+            </p>
         </div>
         <div class="flex flex-col justify-center ">
             <h2 class="header_2">
                 <span class="text-primary-red">3 </span>
                 Gain
             </h2>
-            <div class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10">
                 We’ll send detailed reports to keep you informed while enjoying flexible service agreements and smooth transactions.
 
-            </div>
+            </p>
             <div id="btn_learnMore" class="btn_red mt-4 md:mt-0 responsive-padding ">
                 Learn More
             </div>

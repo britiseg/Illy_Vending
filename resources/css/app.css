@@ -18,6 +18,9 @@
     .header_2 {
       @apply text-black font-normal font-manrope text-24 leading-[150%] md:text-36 md:leading-[54px] md:pl-10 md:pt-10;
     }
+    .header_red {
+        @apply text-secondary-red font-bold font-manrope text-16 leading-[150%] md:text-20 md:leading-[54px]  md:pl-10 md:pt-10  uppercase;
+      }
 
     .body_txt {
       @apply text-black font-light font-manrope text-16 leading-[150%] md:text-20 md:leading-[30px];
@@ -214,21 +217,7 @@ html, body {
 }
 
 /* --- stytles ----- */
-.header_experience_red {
-    height: 30px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 150%;
-    text-transform: uppercase;
 
-    color: #D12420;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
-}
 
 .text-fade1 {
     background: linear-gradient(to top left, #311001, #5e2e0f, #d19236);
@@ -281,16 +270,7 @@ html, body {
     margin-bottom: 4%;
 }
 
-.header_red {
-    align-self: stretch;
-    color: #F80000;
-    font-size: 20px;
-    font-family: Manrope;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 30px;
-    word-wrap: break-word
-}
+
 
 .label_new_end {
      font-family: 'Manrope';
