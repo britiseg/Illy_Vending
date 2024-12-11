@@ -13,9 +13,9 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build/assets/app-8_9bLXqL.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DBkDZK-D.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-dFS_VlMR.css') }}">
-    <script src="{{ asset('build/assets/app-BteSoK7m.js') }}" defer></script>
+    <script src="{{ asset('build/assets/app-CKwc5kYws') }}" defer></script>
 
     @stack('styles')
 

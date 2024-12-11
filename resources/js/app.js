@@ -7,6 +7,7 @@ import './bootstrap';
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("div[id]"); // Todas las secciones con id
     const navItems = document.querySelectorAll(".nav-item"); // Todos los items de navegación
+    const getInTouchButton = document.getElementById("get-in-touch-button");
 
     const observerOptions = {
         root: null,
@@ -50,6 +51,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         item.classList.add("font-bold");
                     }
                 });
+
+                // Si estamos en la sección "prepango-get-in-touch", cambia el botón
+                if (sectionId === "prepango-get-in-touch") {
+                    getInTouchButton.href = "#prepango-program";
+                    getInTouchButton.textContent = "↑ Back to Top";
+                    getInTouchButton.classList.remove("bg-primary-red", "hover:bg-secondary-red");
+                    getInTouchButton.classList.add("bg-dark_brown", "hover:bg-med_brown");
+                } else {
+                    // Restaurar el botón al estado original si no estamos en "prepango-get-in-touch"
+                    getInTouchButton.href = "#prepango-get-in-touch";
+                    getInTouchButton.textContent = "Get In Touch";
+                    getInTouchButton.classList.remove("bg-dark_brown", "hover:bg-med_brown");
+                    getInTouchButton.classList.add("bg-primary-red", "hover:bg-secondary-red");
+                }
 
                 // Si la pantalla es pequeña, centrar el navItem seleccionado
                 if (window.innerWidth <= 768) {

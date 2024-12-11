@@ -5,14 +5,14 @@
             <img src="{{ asset('images/logo_prepango.png') }}" alt="Logo Prepango" class="h-8">
             <img src="{{ asset('images/logo_illy.png') }}" alt="Logo Illy" class="h-8">
         </div>
-        <a href="{{ Route::is('get-in-touch') ? '/' : route('get-in-touch') }}"
-           class="text-white font-semibold px-3 py-2 text-sm shadow-sm
-           {{ Route::is('get-in-touch') ? 'bg-dark_brown hover:bg-med_brown' : 'bg-primary-red hover:bg-secondary-red' }}
-           focus:outline-none">
-            {{ Route::is('get-in-touch') ? 'Back to Top' : 'Get In Touch' }}
+        <a id="get-in-touch-button"
+           href="#prepango-get-in-touch"
+           class="text-white font-semibold px-3 py-2 text-sm shadow-sm bg-primary-red hover:bg-secondary-red focus:outline-none">
+            Get In Touch
         </a>
     </div>
 </div>
+
 
 <!-- Barra de navegación con flechas -->
 <div class="hidden-navbar fixed top-[2.2rem] md:top-[34px] left-0 w-full z-20" id="navbar">
