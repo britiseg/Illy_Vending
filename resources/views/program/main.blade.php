@@ -128,32 +128,32 @@
         </h1>
     <div class=" grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
 
-        <div class="flex flex-col pl-5  md:pl-0 ">
-            <h2 class="header_2  md:pt-0 pl-0 ">
+        <div class="flex flex-col pl-5  md:pl-10 ">
+            <h2 class="header_2  md:pt-0 md:!pl-0 ">
                 <span class="text-primary-red font-bold">1 </span>
                 Connect
             </h2>
-            <p class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding   pl-0 ">
                 Connect with us to select the perfect program tailored to your needs and budget.
 
             </p>
         </div>
         <div class="flex flex-col pl-5  ">
-            <h2 class="header_2  md:pt-0 pl-0">
+            <h2 class="header_2  md:pt-0 md:pl-0">
                 <span class="text-primary-red font-bold">2 </span>
                 Select
             </h2>
-            <p class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10 !pl-0">
                 Choose your ideal location, and we’ll handle everything: instillation, manages refills, cleaning, monitoring, and maintenance - all to ensure a seamless operation.
 
             </p>
         </div>
         <div class="flex flex-col pl-5  ">
-            <h2 class="header_2  md:pt-0 pl-0">
+            <h2 class="header_2  md:pt-0 md:pl-0">
                 <span class="text-primary-red font-bold">3 </span>
                 Gain
             </h2>
-            <p class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding  md:pl-10 !pl-0">
                 We’ll send detailed reports to keep you informed while enjoying flexible service agreements and smooth transactions.
 
             </p>

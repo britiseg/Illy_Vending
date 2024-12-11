@@ -60,6 +60,13 @@
         background-color: #512C1F;
     }
 }
+.custom-scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.custom-scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
 
 body {
     margin: 0;
