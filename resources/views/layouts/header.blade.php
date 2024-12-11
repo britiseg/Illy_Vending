@@ -30,10 +30,55 @@
 </div>
 
 @unless (Route::is('get-in-touch'))
-<div class="flex justify-center">
-       <img src="{{ asset('images/program/machine_1.png') }}" alt="Coffee Machine" class="w-full h-auto lg:h-[837px] object-cover shadow-md">
-   </div>
-     @endunless
+    <div class="flex justify-center" style="background: linear-gradient(90deg, #181D23 11.22%, #5D7389 100.51%);">
+        <div class="relative !mt-0">
+
+            <div class="grid grid-flow-row-dense  grid-cols-1 lg:grid-cols-3 items-center">
+                <!-- Columna para la imagen -->
+                <div class="relative">
+                    <img src="{{ asset('images/program/machine_1.png') }}" alt="Coffee Machine" class="w-full h-auto object-cover shadow-md">
+                    <!-- Texto superpuesto en móvil -->
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-center text-xl font-semibold lg:hidden">
+
+                        <div class="flex flex-col  md:items-center gap-2 md:gap-4 mt-[10%]">
+                            <div class="header_1 text-white  gap-2">Prepango Brings the </div>
+
+                                <div class="flex items-center gap-2">
+                                    <div class="header_1 text-white md:mb-0">Luxury of    </div>
+                                    <div class="mt-2">
+                                        <div class="w-12 h-[32px] md:w-[83px] md:h-[73px] bg-no-repeat bg-center bg-contain" style="background-image: url('/images/illy_red.svg');"></div>
+
+                                    </div>
+                                    <div class="header_1 text-white"> to You</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <!-- Columna para el texto (solo en versiones no móviles) -->
+                <div class="col-span-2 hidden lg:block flex flex-col h-[369px] items-center w-full justify-center text-center gap-4 " style="background: linear-gradient(90deg, #181D23 11.22%, #5D7389 100.51%);">
+
+                <div class="flex flex-row items-center gap-2 md:gap-4 mt-[15%]">
+                            <div class="header_1 text-white">Prepango Brings the </div>
+                            <div class="flex items-center gap-2">
+                                <div class="header_1 text-white md:mb-0 mr-2">Luxury of </div>
+                                <div class="mt-2">
+                                <div class="w-12 h-[32px] md:w-[83px] md:h-[55px] bg-no-repeat bg-center bg-contain mt" style="background-image: url('/images/illy_red.svg');"></div>
+                                </div>
+
+                            </div>
+                            <div class="header_1 text-white">to You</div>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+@endunless
+
+
 
 <!-- Barra de navegación secundaria con flechas -->
 <x-navbar-with-arrows

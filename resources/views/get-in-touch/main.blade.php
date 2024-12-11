@@ -3,7 +3,7 @@
 @section('content')
 
 <body class="relative  min-h-screen text-white flex items-center justify-center"> --}}
-    <div class="container  ">
+    <div class="  ">
 
 
 
@@ -48,12 +48,12 @@
     </div>
     <button type="submit"  onclick="window.location.href='/'" class="btn_red">Get in Touch</button>
     <span class="text-20 text-gray-500 text-center mt-10" >We are also available at </span>
-    <span class="text-20 text-gray-500 text-center" >✉ emailaddress@gmail.com </span>
+    <span class="text-20 text-gray-500 text-center" >✉ illy@prepango.com </span>
     <br>
     <br>
 
-    <span class="text-20 text-gray-500 text-center mt-10">And you can reach us at </span>
-        <span class="text-20 text-gray-500 text-center"> ☎︎︎  (###) ### - ###</span>
+   <!-- { <span class="text-20 text-gray-500 text-center mt-10">And you can reach us at </span>
+        <span class="text-20 text-gray-500 text-center"> ☎︎︎  (###) ### - ###</span>} -->
   </form>
 
     </div>

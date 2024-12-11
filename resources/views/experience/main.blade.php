@@ -4,15 +4,14 @@
         <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
 
             <div class="flex items-center gap-2">
-            <div class="header_1   md:mb-0">See What Makes </div>
+                <div class="header_1   md:mb-0">See What Makes </div>
                 <div class="w-12 h-[42px] md:w-[83px] md:h-[73px] bg-no-repeat bg-center bg-contain" style="background-image: url('/images/illy_red.svg');"></div>
 
             </div>
             <div class="header_1 gap-2">an Exceptional Partner</div>
         </div>
-
-
     </div>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2" style="background: #F6F0EB">
 
         <div class="flex flex-col text-left">
