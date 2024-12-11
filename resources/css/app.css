@@ -300,6 +300,20 @@ html, body {
     flex-grow: 0;
 }
 
+.header_experience_red_mobile {
+    height: 16px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #D12420;
+    align-self: center;
+    flex-grow: 0;
+    margin-bottom: 10px;
+}
+
 .frame_form {
     border-radius: 20px;
     background: var(--White, #FFF);
