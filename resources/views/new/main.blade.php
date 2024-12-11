@@ -40,7 +40,7 @@
                     class="hidden w-[401px] h-[169px] lg:block"
                     alt="">
                 <img src="{{ asset('images/new/image_new_mobile.png')}}"
-                     class="block object-cover lg:hidden"
+                     class="block w-full h-full object-cover lg:hidden"
                      alt="Coffee">
             </div>
         </div>
@@ -48,13 +48,13 @@
 
     <div class="grid grid-cols-1 gap-4 mt-4 bg-white sm:grid-cols-3 ">
         <div class="grid grid-cols-1 mt-1">
-            <img src="{{ asset('images/new/card_one.png')}}" alt="" class="object-cover w-1/4 h-auto mx-auto lg:w-full lg:h-full">
+            <img src="{{ asset('images/new/card_one.png')}}" alt="" class="object-cover w-3/4 h-auto mx-auto lg:w-full lg:h-full">
         </div>
         <div class="grid grid-cols-1 mt-1">
-            <img src="{{ asset('images/new/card_two.png')}}" alt="" class="object-cover w-1/4 h-auto mx-auto lg:w-full lg:h-full">
+            <img src="{{ asset('images/new/card_two.png')}}" alt="" class="object-cover w-3/4 h-auto mx-auto lg:w-full lg:h-full">
         </div>
         <div class="grid grid-cols-1 mt-1">
-            <img src="{{ asset('images/new/card_three.png')}}" alt="" class="object-cover w-1/4 h-auto mx-auto lg:w-full lg:h-full">
+            <img src="{{ asset('images/new/card_three.png')}}" alt="" class="object-cover w-3/4 h-auto mx-auto lg:w-full lg:h-full">
         </div>
     </div>
 </div>
