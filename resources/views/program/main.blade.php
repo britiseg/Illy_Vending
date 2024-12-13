@@ -18,8 +18,8 @@
             </p>
         </div>
 
-        <div class="flex justify-center order-2 sm:order-1">
-            <img class="Image  w-full h-[518px]  relative"src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" />
+        <div class="flex justify-end order-2 sm:order-1">
+            <img class="Image relative"src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" />
         </div>
 
 
