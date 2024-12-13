@@ -39,8 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // console.log('Observando:', entry.target.id, 'Is intersecting:', entry.isIntersecting);
             if (entry.isIntersecting) {
                 const sectionId = entry.target.getAttribute("id");
-                // console.log('Sección visible:', sectionId);
-                // console.log('sectionID: ' + sectionId);
 
                 // Primero, desmarcar todos los navItems
                 navItems.forEach((item) => {
@@ -50,12 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
-                // Ahora, marcar el navItem correspondiente a la sección visible
-                // navItems.forEach((item) => {
-                //     if (item.getAttribute("href") === `#${sectionId}`) {
-                //         item.classList.add("font-bold");
-                //     }
-                // });
+
 
                 // Si estamos en la sección "prepango-get-in-touch", cambia el botón
                 if (sectionId === "prepango-get-in-touch") {
@@ -95,53 +88,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Forzar la selección del primer nav-item al cargar la página
-    // const firstNavItem = document.querySelector('.nav-item[href="#prepango-program"]');
-    // if (firstNavItem) {
-    //     firstNavItem.classList.add('font-bold');
-
-    //     // Si es una pantalla pequeña, centrar el navItem
-    //     if (window.innerWidth <= 768) {
-    //         centerNavItem(firstNavItem);
-    //         // const navBar = document.getElementById('navbar');
-    //         // if (navBar) {
-    //         //     const navBarWidth = navBar.offsetWidth;
-    //         //     const navItemOffsetLeft = firstNavItem.offsetLeft;
-    //         //     const navItemWidth = firstNavItem.offsetWidth;
-
-    //         //     const scrollPosition = navItemOffsetLeft - navBarWidth / 2 + navItemWidth / 2;
-    //         //     navBar.scrollTo({
-    //         //         left: scrollPosition,
-    //         //         behavior: 'smooth',
-    //         //     });
-    //         // }
-    //     }
-    // }
 
 });
-
-// Función para centrar el navItem dentro de la barra de navegación
-
-// function centerNavItem(navItem, navbarId) {
-
-//     if (!navItem) {
-//         console.error('Nav item not found');
-//         return;
-//     }
-//     const navBars = document.querySelectorAll('.nav-bar'); // Seleccionar todas las barras de navegación con la clase '.nav-bar'
-
-//     navBars.forEach(navBar => {
-//         const navBarWidth = navBar.offsetWidth;
-//         const navItemOffsetLeft = navItem.offsetLeft;
-//         const navItemWidth = navItem.offsetWidth;
-
-//         // Calcular la posición para centrar el nav-item en cada barra de navegación
-//         const scrollPosition = navItemOffsetLeft - navBarWidth / 2 + navItemWidth / 2;
-
-//         // Desplazar la barra de navegación hasta la posición calculada
-//         navBar.scrollTo({
-//             left: scrollPosition,
-//             behavior: 'smooth',
-//         });
-//     });
-// }

@@ -164,11 +164,6 @@ function centerNavItem(navItem, navbarId) {
 
 }
 
-// const navItem = document.querySelector('.nav-item.font-bold');  // Selecciona el navItem con la clase 'font-bold'
-// if (navItem && window.innerWidth <= 768) {
-//     centerNavItem(navItem);  // Centrar el navItem seleccionado en ambas barras de navegación
-// }
-
 
 
 
@@ -210,16 +205,9 @@ function toggleArrows() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             backToTopButton.classList.remove("hidden");
 
-            // const programNavItem = document.querySelector('a[href="#prepango-program"]');
-            //                 if (programNavItem) {
-            //                     programNavItem.classList.add("font-bold");
-            //                 }
-
-            // getInTouchButton.classList.remove("hidden");
         } else {
 
             backToTopButton.classList.add("hidden");
-            // getInTouchButton.classList.add("hidden");
         }
     }
 
@@ -284,109 +272,5 @@ function centerNavItem(navItem, navbarId) {
     window.addEventListener("load", toggleArrows);
     window.addEventListener("resize", toggleArrows);
 
-//     window.addEventListener('load', function () {
-//     const activeNavItem = document.querySelector('.nav-item.font-bold');
-//     if (activeNavItem && window.innerWidth <= 768) {
-//         centerNavItem(activeNavItem);
-//     }
-// });
-//   function selectNavItem(event) {
-//     const targetText = event.currentTarget.innerText;
-//     const targetHref = event.currentTarget.getAttribute("href");
-
-//     document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('font-bold'));
-//     document.querySelectorAll('.nav-item').forEach(item => {
-//         if (item.innerText === targetText || item.getAttribute("href") === targetHref) {
-//             item.classList.add('font-bold');
-//         }
-//     });
-
-//       // Aplicar centrado solo en móviles
-//       if (window.innerWidth <= 768) {
-//         console.log('entros center');
-//         centerNavItem(event.currentTarget);
-//     }
-// }
-
-// function centerNavItem(navItem) {
-//     const navBar = document.getElementById('navBar');
-//     console.log('cenger'+navBar);
-//     if (!navBar || !navItem) return;
-
-//     const navBarWidth = navBar.offsetWidth;
-//     const navItemOffsetLeft = navItem.offsetLeft;
-//     const navItemWidth = navItem.offsetWidth;
-
-//     // Calcular la posición para centrar el nav-item
-//     const scrollPosition = navItemOffsetLeft - navBarWidth / 2 + navItemWidth / 2;
-//     navBar.scrollTo({
-//         left: scrollPosition,
-//         behavior: 'smooth',
-//     });
-// }
-//     function scrollNav(distance) {
-//         const navBar = document.getElementById('navBar');
-//         navBar.scrollBy({ left: distance, behavior: 'smooth' });
-//     }
-
-//     function toggleArrows() {
-//         const navBar = document.getElementById('navBar');
-//         const leftArrow = document.getElementById('leftArrow');
-//         const rightArrow = document.getElementById('rightArrow');
-
-//         if (navBar.scrollWidth > navBar.clientWidth) {
-//             leftArrow.classList.toggle('hidden-arrows', navBar.scrollLeft === 0);
-//             rightArrow.classList.toggle('hidden-arrows', navBar.scrollLeft + navBar.clientWidth >= navBar.scrollWidth);
-//         } else {
-//             leftArrow.classList.add('hidden-arrows');
-//             rightArrow.classList.add('hidden-arrows');
-//         }
-//     }
-
-//     function scrollFunction() {
-//         const backToTopButton = document.getElementById("btn-back-to-top");
-//         // const getInTouchButton = document.getElementById("btn-get-in-touch");
-
-//         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//             backToTopButton.classList.remove("hidden");
-//             // getInTouchButton.classList.remove("hidden");
-//         } else {
-//             backToTopButton.classList.add("hidden");
-//             // getInTouchButton.classList.add("hidden");
-//         }
-//     }
-
-//     function scrollToTop() {
-//         window.scrollTo({ top: 0, behavior: "smooth" });
-//     }
-
-//     function handleGetInTouch() {
-
-//         alert("Redirigir a sección de contacto o abrir modal.");
-//     }
-
-
-
-//     window.addEventListener("scroll", function () {
-//     const navbar = document.getElementById("navbar");
-//     if (!navbar) return;
-
-//     // Ajusta el valor de scrollY según el ancho de la pantalla
-//     const scrollThreshold = window.innerWidth <= 768 ? 400 : 800;
-
-//     if (window.scrollY > scrollThreshold) {
-//         navbar.classList.remove("hidden-navbar");
-//     } else {
-//         navbar.classList.add("hidden-navbar");
-//         navbar.classList.remove("scrolled");
-//     }
-// });
-
-
-
-//     document.getElementById("btn-back-to-top").addEventListener("click", scrollToTop);
-//     window.addEventListener("scroll", scrollFunction);
-//     window.addEventListener("load", toggleArrows);
-//     window.addEventListener("resize", toggleArrows);
 </script>
 
