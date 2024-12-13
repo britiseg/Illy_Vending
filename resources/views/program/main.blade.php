@@ -1,9 +1,6 @@
 <!-- resources/views/program/main.blade.php -->
 
 <div class="">
-
-
-
     <div class="grid grid-cols-1 sm:grid-cols-2 ">
 
         <div class="flex flex-col items-center justify-top text-left">
@@ -21,11 +18,8 @@
         <div class="flex justify-end md:h-[538px] order-2 sm:order-1">
             <img class="Image md:w-full  relative"src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" />
         </div>
-
-
-
     </div>
-    <div class="flex flex-col md:flex-row items-center w-full h-[307px] px-10 py-[62px] bg-fade justify-center text-center">
+    <div class="flex flex-col md:flex-row items-center w-full h-[296px] md:h-[215px] px-10 py-[62px] bg-fade justify-center text-center">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="flex flex-col md:flex-row items-center justify-start md:gap-4">
                 <div class="header_1 text-white md:gap-4  md:mb-0">Treat your people</div>
@@ -202,8 +196,5 @@
 
     </div>
 
+</div>
 
-
-    <script>
-
-</script>

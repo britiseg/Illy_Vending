@@ -62,7 +62,10 @@
         z-index: 0;
     }
 }
-
+.section {
+    min-height: 100vh;
+    scroll-margin-top: 5rem;
+}
 
 .custom-scrollbar-hide::-webkit-scrollbar {
     display: none;

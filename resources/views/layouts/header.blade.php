@@ -227,7 +227,7 @@ function toggleArrows() {
     const navbar = document.getElementById("navbar");
     if (!navbar) return;
 
-    const scrollThreshold = window.innerWidth <= 768 ? 400 : 800;
+    const scrollThreshold = window.innerWidth <= 768 ? 200 : 600;
 
     // Mostrar/ocultar la barra de navegación
     if (window.scrollY > scrollThreshold) {
