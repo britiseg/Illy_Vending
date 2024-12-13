@@ -80,14 +80,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Observa solo las secciones relevantes, no los elementos como el navbar
     sections.forEach((section) => observer.observe(section));
 
-    // Al cargar la página, selecciona el primer navItem (el de "The Prepango Program")
+    // Forzar la selección del primer nav-item al cargar la página
     const firstNavItem = document.querySelector('.nav-item[href="#prepango-program"]');
     if (firstNavItem) {
         firstNavItem.classList.add('font-bold');
+
+        // Si es una pantalla pequeña, centrar el navItem
         if (window.innerWidth <= 768) {
-            centerNavItem(firstNavItem);
+            const navBar = document.getElementById('navbar');
+            if (navBar) {
+                const navBarWidth = navBar.offsetWidth;
+                const navItemOffsetLeft = firstNavItem.offsetLeft;
+                const navItemWidth = firstNavItem.offsetWidth;
+
+                const scrollPosition = navItemOffsetLeft - navBarWidth / 2 + navItemWidth / 2;
+                navBar.scrollTo({
+                    left: scrollPosition,
+                    behavior: 'smooth',
+                });
+            }
         }
     }
+
 });
 
 // Función para centrar el navItem dentro de la barra de navegación

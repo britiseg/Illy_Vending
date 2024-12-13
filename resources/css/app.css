@@ -336,5 +336,10 @@ html, body {
       left: 10.8rem !important;
     }
 }
+.hidden-important {
+    display: none !important;
+}
+
+
 
 
