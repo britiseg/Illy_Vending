@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            console.log('Observando:', entry.target.id, 'Is intersecting:', entry.isIntersecting);
+            // console.log('Observando:', entry.target.id, 'Is intersecting:', entry.isIntersecting);
             if (entry.isIntersecting) {
                 const sectionId = entry.target.getAttribute("id");
-                console.log('Sección visible:', sectionId);
+                // console.log('Sección visible:', sectionId);
                 // console.log('sectionID: ' + sectionId);
 
                 // Primero, desmarcar todos los navItems

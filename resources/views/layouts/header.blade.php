@@ -17,7 +17,7 @@
 <!-- Barra de navegación con flechas -->
 <div class="hidden-navbar fixed top-[2.2rem] md:top-[34px] left-0 w-full z-20" id="navbar">
     <x-navbar-with-arrows
-    :id="'navbar1'"
+    :id="'navbar'"
     :links="[
         ['href' => '#prepango-program', 'text' => 'The Prepango Program', 'id' => '1', 'class' => 'font-bold'],
         ['href' => '#prepango-experience', 'text' => 'The Illy Experience', 'id' => '2'],
@@ -82,7 +82,7 @@
 
 <!-- Barra de navegación secundaria con flechas -->
 <x-navbar-with-arrows
-:id="'navbar2'"
+:id="'navbar'"
 :links="[
     ['href' => '#prepango-program', 'text' => 'The Prepango Program', 'id' => '1', 'class' => 'font-bold'],
     ['href' => '#prepango-experience', 'text' => 'The Illy Experience', 'id' => '2'],
@@ -192,9 +192,12 @@ function toggleArrows() {
             leftArrow.classList.toggle('hidden-arrows', navBar.scrollLeft === 0);
             rightArrow.classList.toggle('hidden-arrows', navBar.scrollLeft + navBar.clientWidth >= navBar.scrollWidth);
         } else {
+            if (leftArrow && rightArrow) {
             // Si no hay desplazamiento, ocultar ambas flechas
             leftArrow.classList.add('hidden-arrows');
             rightArrow.classList.add('hidden-arrows');
+        }
+
         }
     });
 }
@@ -225,9 +228,10 @@ function toggleArrows() {
     }
     window.addEventListener("scroll", function () {
     const navbar = document.getElementById("navbar");
+    console.log('navbar')
     if (!navbar) return;
 
-    const scrollThreshold = window.innerWidth <= 768 ? 200 : 600;
+    const scrollThreshold = window.innerWidth <= 768 ? 50 : 600;
 
     // Mostrar/ocultar la barra de navegación
     if (window.scrollY > scrollThreshold) {
