@@ -32,7 +32,9 @@ module.exports = {
                 'med_brown': '#786451',
                 'dark_beige': '#C6B8AE',
                 'med_beige': '#F1E9DA',
-                'light_beige': '#F6F0EB',
+            },
+            boxShadow: {
+                custom: 'var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-400) var(--sds-size-depth-negative-200) var(--sds-color-black-200), var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100)',
             },
             backgroundImage: {
                 'fade': 'linear-gradient(to top left, #311001, #5e2e0f, #d19236)',

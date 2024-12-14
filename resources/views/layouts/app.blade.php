@@ -13,7 +13,7 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build/assets/app-_ks5Z1Ip.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-CKC51yNx.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-dFS_VlMR.css') }}">
     <script src="{{ asset('build/assets/app-x9UahQhn.js') }}" defer></script>
 
