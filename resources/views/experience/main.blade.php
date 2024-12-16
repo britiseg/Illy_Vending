@@ -1,4 +1,4 @@
-<div class="" style="background: #F6F0EB">
+<div class="responsive-padding" style="background: #F6F0EB">
 
     <div class="flex items-center justify-center space-x-2">
         <div class="header_1 text-black hidden lg:block">See What Makes</div>
@@ -42,15 +42,15 @@
             <p class="text-black text-base font-normal font-['Manrope'] leading-normal block lg:hidden">
                 illy has been carbon neutral since 2023 after creating the “One Makes the Difference” initiative to demonstrate how sustainable quality helps protect and improve the well being of the planet. It reminds consumers that everyone’s actions can make a difference.
             </p>
-            <img src="{{ asset('images/experience/image_experience_mobile_one.png')}}" alt="Coffee" class="block lg:hidden mt-2 object-cover">
+            <img src="{{ asset('images/experience/new_experience.png')}}" alt="Coffee" class="block lg:hidden mt-2 object-cover">
         </div>
 
         <div class="flex hidden lg:block">
-            <img src="{{ asset('images/experience/image_illy_one.png')}}" alt="Coffee" style="width: 668px;  height: 648px;" class="hidden object-cover lg:block">
+            <img src="{{ asset('images/experience/image_illy_one.png')}}" alt="Coffee" class="w-full h-[648px] hidden object-cover lg:block">
         </div>
 
 
-        {{-- Version Mobile --}}
+        {{-- Mobile --}}
         <div class="flex flex-col text-left responsive-padding block lg:hidden -mt-4 lg:mt-0">
             <h1 class="text-[#f80000] text-base font-extrabold font-['Manrope'] uppercase leading-normal ">
                 THE DIRECT TRADE MODEL
@@ -70,14 +70,14 @@
                 <img src="{{ asset('images/experience/image_experience_mobile_two.png')}}" alt="Coffee" class="w-full h-full object-cover">
             </div>
         </div>
-        <button type="submit" class="w-3/4 p-4 mx-auto font-bold text-white bg-red-600 rounded-full"> Get In Touch</button>
+        <a id="get-in-touch-button" href="#prepango-get-in-touch" class="w-3/4 p-4 mx-auto font-bold text-white text-center bg-red-600 rounded-full block lg:hidden"> Get In Touch</a>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2" style="background: #F6F0EB">
-        <div class="responsive-padding flex justify-center relative hidden lg:block">
-            <img src="{{ asset('images/experience/image_illy_two.png')}}"
-                alt="Coffee" style="width: 658px;  height: 638px;"
-                class="object-cover relative -top-72">
+        <div class="responsive-padding flex justify-start relative hidden lg:block">
+            <img src="{{ asset('images/experience/new_experience.png')}}"
+                alt="Coffee"
+                class="w-full h-[638px] object-cover relative -top-72">
         </div>
         <div class="responsive-padding flex flex-col text-left hidden lg:block -mt-4 p-4">
             <h1 class="uppercase header_experience_red hidden lg:block">
@@ -95,22 +95,21 @@
             </p>
             <br>
             <div class="flex justify-center hidden lg:block">
-                <img src="{{ asset('images/experience/image_illy_one.png')}}" alt="Coffee" style="width: 668px;  height: 648px;" class="block object-cover lg:hidden">
+                <img src="{{ asset('images/experience/image_illy_one.png')}}" alt="Coffee" class="w-full h-[648px] block object-cover lg:hidden">
             </div>
             <br>
-            <button type="submit" class="w-full p-2 mx-auto font-bold text-white bg-red-600 rounded-full hidden lg:block"> Get In Touch</button>
+            <a id="get-in-touch-button" href="#prepango-get-in-touch" class="w-full p-2 mx-auto font-bold text-center text-white bg-red-600 rounded-full hidden lg:block"> Get In Touch</a>
         </div>
     </div>
-
-    <div class="flex justify-center hidden lg:block -mt-56">
-        <img src="{{ asset('images/experience/image_illy_3.png')}}" alt="Coffee Illy" style="width: 1440px; height: 1150px;" class="object-cover shadow-md">
+</div>
+<div class="flex justify-center hidden lg:block -mt-72">
+    <img src="{{ asset('images/experience/image_illy_3.png')}}" alt="Coffee Illy" class="w-full h-[1150px] object-cover">
+</div>
+<div class="grid grid-cols-1 gap-4 mt-2 sm:grid-cols-2">
+    <div class="mb-2">
+        <img src="{{ asset('images/experience/image_red.png')}}" alt="" class="block object-cover lg:hidden">
     </div>
-    <div class="grid grid-cols-1 gap-4 mt-2 sm:grid-cols-2">
-        <div class="mb-2">
-            <img src="{{ asset('images/experience/image_red.png')}}" alt="" class="block object-cover lg:hidden">
-        </div>
-        <div class="mb-2">
-            <img src="{{ asset('images/experience/image_white.png')}}" alt="" class="block object-cover w-full lg:hidden lg:w-3/4">
-        </div>
+    <div class="mb-2">
+        <img src="{{ asset('images/experience/image_white.png')}}" alt="" class="block object-cover w-full lg:hidden lg:w-3/4">
     </div>
 </div>
