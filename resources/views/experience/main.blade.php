@@ -7,13 +7,13 @@
     </div>
 
     <div class="mb-1 text-center">
-        <div class="flex ml-6 mt-1">
+        <div class="flex ml-1 mt-1">
             <img src="{{ asset('images/experience/label_illy_mobile.png') }}" class="block lg:hidden" alt="label">
         </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-4 mt-2 sm:grid-cols-2" style="background: #F6F0EB">
-        <div class="flex flex-col text-left responsive-padding">
+    <div class="grid grid-cols-1 mt-2 sm:grid-cols-2" style="background: #F6F0EB">
+        <div class="flex flex-col text-left lg:responsive-padding">
             <h1 class="header_experience_red hidden lg:block">
                 THE DIRECT TRADE MODEL
             </h1>
@@ -51,7 +51,8 @@
 
 
         {{-- Mobile --}}
-        <div class="flex flex-col text-left responsive-padding block lg:hidden -mt-4 lg:mt-0">
+        <div class="flex flex-col text-left lg:responsive-padding block lg:hidden -mt-4 lg:mt-0">
+            <br>
             <h1 class="text-[#f80000] text-base font-extrabold font-['Manrope'] uppercase leading-normal ">
                 THE DIRECT TRADE MODEL
             </h1>
@@ -70,6 +71,7 @@
                 <img src="{{ asset('images/experience/image_experience_mobile_two.png')}}" alt="Coffee" class="w-full h-full object-cover">
             </div>
         </div>
+        <br>
         <a id="get-in-touch-button" href="#prepango-get-in-touch" class="w-3/4 p-4 mx-auto font-bold text-white text-center bg-red-600 rounded-full block lg:hidden"> Get In Touch</a>
     </div>
 
@@ -80,6 +82,7 @@
                 class="w-full h-[638px] object-cover relative -top-72">
         </div>
         <div class="responsive-padding flex flex-col text-left hidden lg:block -mt-4 p-4">
+            <br>
             <h1 class="uppercase header_experience_red hidden lg:block">
                 Our Goal is to Delight Coffee Lovers
             </h1>
@@ -98,12 +101,14 @@
                 <img src="{{ asset('images/experience/image_illy_one.png')}}" alt="Coffee" class="w-full h-[648px] block object-cover lg:hidden">
             </div>
             <br>
-            <a id="get-in-touch-button" href="#prepango-get-in-touch" class="w-full p-2 mx-auto font-bold text-center text-white bg-red-600 rounded-full hidden lg:block"> Get In Touch</a>
+            <div id="btn_getInTouch" class="btn_red mt-4 md:mt-0 mx-auto flex justify-center">
+                <a id="get-in-touch-button" href="#prepango-get-in-touch" class="hidden lg:block"> Get In Touch</a>
+            </div>
         </div>
     </div>
 </div>
-<div class="flex justify-center hidden lg:block -mt-72">
-    <img src="{{ asset('images/experience/image_illy_3.png')}}" alt="Coffee Illy" class="w-full h-[1150px] object-cover">
+<div class="flex justify-center hidden lg:block -mt-72 bg-white">
+    <img src="{{ asset('images/experience/image_illy_3.png')}}" alt="Coffee Illy" class="w-full h-[1150px] object-cover lg:object-contain">
 </div>
 <div class="grid grid-cols-1 gap-4 mt-2 sm:grid-cols-2">
     <div class="mb-2">

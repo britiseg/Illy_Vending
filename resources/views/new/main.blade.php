@@ -1,7 +1,8 @@
 <div class="">
-    <span class="p-2 header_black_new block lg:hidden">
+    <span class="responsive-padding header_black_new block lg:hidden">
         The New Cold Brew Vending Machine
     </span>
+
     <div class="grid grid-cols-12 gap-4 items-center">
         <div class="col-span-3">
         </div>
@@ -11,38 +12,38 @@
             </span>
         </div>
     </div>
+
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
-        <!-- Imagen izquierda -->
         <div class="col-span-3">
             <img src="{{ asset('images/new/machine_new.png')}}"
             class="hidden w-[260px] h-[479px] relative -top-12 p-4 lg:block"
             alt="Coffee">
         </div>
-
-        <!-- Texto central -->
         <div class="col-span-5">
-            <p class="text-black text-xl font-normal font-['Manrope'] leading-[30px] p-4 lg:p-0">
+            <p class="text-black text-xl font-normal font-['Manrope'] leading-[30px] responsive-padding lg:p-0">
                 These ready to drink beverages are expertly crafted to offer coffee lovers a refreshing way to enjoy coffee anywhere they want it. The unit features all three illy cold brew varieties in convenient, on-the-go, 8.5oz slim cans. Pick from a wide selection of espresso beverages, delivered quickly and conveniently.<br/><br/>This machine features a modern visual display, 9” color touchscreen and full motion video. It offers product information, integrated cashless payment, multi-product purchases from a single transaction and digital advertising
             </p>
         </div>
-
-        <!-- Imagen derecha -->
         <div class="col-span-3">
-            <div class="mb-2 mt-0">
-                <img src="{{ asset('images/new/machine_spaces_new.png')}}"
-                     class="hidden w-[401px] h-[169px] lg:block"
+            <div class="mb-2 mt-0 hidden lg:block">
+                <img src="{{ asset('images/new/new_machine.svg')}}"
+                     class="hidden w-[801px] h-[340px] lg:block"
                      alt="">
             </div>
-
-            <div class="mt-4 mb-2 mt-4">
-                <img src="{{ asset('images/new/electrical_new.png')}}"
-                    class="hidden w-[401px] h-[169px] lg:block"
-                    alt="">
-                <img src="{{ asset('images/new/image_new_mobile.png')}}"
-                     class="block object-cover lg:hidden"
-                     alt="Coffee">
-            </div>
         </div>
+    </div>
+    <div class="grid grid-cols-2 items-center responsive-padding block lg:hidden">
+        <div class="flex">
+            <img src="{{ asset('images/new/machine_new.png')}}"
+            class="object-cover"
+            alt="Coffee">
+        </div>
+        <div class="flex">
+            <img src="{{ asset('images/new/new_machine.svg')}}"
+                 class="object-cover"
+                 alt="Coffee">
+        </div>
+
     </div>
     <div class="justify-between items-center flex flex-col sm:flex-row md:inline-flex">
         <div class="grow shrink basis-0 h-[120px] justify-start items-start flex">
@@ -69,5 +70,4 @@
             </div>
         </div>
     </div>
-
 </div>
