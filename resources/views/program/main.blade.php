@@ -4,7 +4,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 ">
 
         <div class="flex flex-col items-center justify-top text-left">
-            <h2 class="header_2 responsive-padding font-bold bg-light_beige">
+            <h2 class="header_2 responsive-padding font-bold bg-[#F6F0EB]">
                 Introducing Your Luxury Automated Coffee Solution
             </h2>
 
@@ -16,7 +16,7 @@
         </div>
 
         <div class="flex justify-end md:h-[538px] order-2 sm:order-1">
-            <img class="Image md:w-full  relative"src="{{ asset('images/program/satisfaction_2.png') }}" alt="Coffee Machine" />
+            <img class="Image md:w-full  relative"src="{{ asset('images/program/satisfaction_2.jpg') }}" alt="Coffee Machine" />
         </div>
     </div>
     <div class="flex flex-col md:flex-row items-center w-full h-[296px] md:h-[215px] px-10 py-[62px] bg-fade justify-center text-center">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="flex flex-col items-center  text-left order-1 sm:order-2 ">
-            <h2 class="header_2 responsive-padding w-full bg-light_beige">Maximum Satisfaction with a Small Footprint</h2>
+            <h2 class="header_2 responsive-padding w-full bg-[#F6F0EB]">Maximum Satisfaction with a Small Footprint</h2>
             <p class="body_txt responsive-padding  ">Enjoy an espresso, cappuccino, caffè latte, macchiato, and many other espresso-based drinks. Our units offer a premium coffee experience in every cup, all while taking up minimal space, making them perfect for:
 
             </p>
@@ -122,7 +122,7 @@
 
 
     <!-- Partnerships Section -->
-    <div class="bg-light_beige pb-6 md:pl-10">
+    <div class="bg-[#F6F0EB] pb-6 md:pl-10">
         <div class="grid grid-cols-1 sm:grid-cols-2">
             <div class="flex justify-left">
                 <h1 class="header_2 responsive-padding pb-0 md:pl-0">

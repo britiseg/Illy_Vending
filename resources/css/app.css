@@ -314,7 +314,7 @@ html, body {
     align-items: center;
 
     /* position: fixed; */
-    margin-left: 66.6%;
+    margin-left:33.3%;
     margin-top: 3rem;
 
     transform: translateX(-50%);
@@ -324,7 +324,7 @@ html, body {
     @media (min-width: 1688px) {
         width: 631px;
         top: 6.5rem;
-        left: 66.6%;
+        left:33.3%;
     }
 
     /* Estilo para tablets */
