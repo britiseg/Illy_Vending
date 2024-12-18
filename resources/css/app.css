@@ -121,7 +121,7 @@ html, body {
 /* Estilos personalizados para los elementos de navegación */
 
 #header {
-    /* height: 64px; */
+    height: 56px;
     /* Altura del header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra ligera */

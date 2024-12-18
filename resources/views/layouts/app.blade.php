@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('build/assets/app-DyRxsgMm.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-x9UahQhn.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-dFS_VlMR.css') }}">
     <script src="{{ asset('build/assets/app-x9UahQhn.js') }}" defer></script>
 

@@ -1,13 +1,13 @@
 
-<div id="header" class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+<div id="header" class="fixed top-0 left-0 w-full bg-light_beige shadow-md z-50">
     <div class="flex items-center justify-between p-0">
-        <div class="flex items-center space-x-2">
-            <img src="{{ asset('images/logo_prepango.png') }}" alt="Logo Prepango" class="h-8">
-            <img src="{{ asset('images/logo_illy.png') }}" alt="Logo Illy" class="h-8">
+        <div class="flex items-center space-x-2 justify-center">
+            <img src="{{ asset('images/logo_prepango.png') }}" alt="Logo Prepango" class="h-8 md:h-10 pr-3 pl-6">
+            <img src="{{ asset('images/logo_illy.png') }}" alt="Logo Illy" class="h-8 md:h-10 pl-3">
         </div>
         <a id="get-in-touch-button"
            href="#prepango-get-in-touch"
-           class="text-white font-semibold px-3 py-2 text-sm shadow-sm bg-primary-red hover:bg-secondary-red focus:outline-none">
+           class="text-white font-semibold px-3 py-2 text-sm shadow-sm bg-primary-red hover:bg-secondary-red focus:outline-none h-14 md:text-[18px] content-center text-center">
             Get In Touch
         </a>
     </div>
@@ -15,7 +15,7 @@
 
 
 <!-- Barra de navegación con flechas -->
-<div class="hidden-navbar fixed top-[2.2rem] md:top-[34px] left-0 w-full z-20" id="navbar">
+<div class="hidden-navbar fixed top-[3.5rem] md:top-[34px] left-0 w-full z-20" id="navbar">
     <x-navbar-with-arrows
     :id="'navbar'"
     :links="[
@@ -54,7 +54,7 @@
 
             <!-- Columna para el texto (solo en versiones no móviles) -->
             <div class=" absolute hidden lg:flex md:flex  flex-col h-[369px] w-full items-center justify-center text-center gap-4 ">
-                <div class="flex items-center gap-4 mt-[5.6%]">
+                <div class="flex items-center gap-4 justify-center text-center pt-[7%] pb-[4%]">
                     <div class="header_1 text-white">Prepango Brings the</div>
                     <div class="flex items-center gap-2">
                         <div class="header_1 text-white">Luxury of</div>
