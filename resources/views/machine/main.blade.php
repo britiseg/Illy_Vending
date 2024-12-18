@@ -113,7 +113,7 @@
                     <img class="w-[120px] h-[120px] object-cover" src="{{ asset('images/machine/cup_4.png') }}" alt="Drip Coffee">
                 </div>
                     <div class="text-left ">
-                    <h3 class="header_red !p-0 text-left">CAFFÈ MOCHAE</h3>
+                    <h3 class="header_red !p-0 text-left">CAFFÈ MOCHA</h3>
                     <p class="body_txt">Espresso blended with thick chocolate and steamed milk, served in a 12oz cup</p>
                     </div>
 
