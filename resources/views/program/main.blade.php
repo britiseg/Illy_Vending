@@ -1,26 +1,27 @@
 <!-- resources/views/program/main.blade.php -->
 
 <div class="">
-    <div class="grid grid-cols-1 sm:grid-cols-2 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2" >
 
-        <div class="flex flex-col items-center justify-top text-left">
-            <h2 class="header_2 responsive-padding font-bold bg-[#F6F0EB]">
+        <div class="flex flex-col items-start justify-start text-left h-full" >
+            <h2 class="header_2 responsive-padding font-bold bg-light_beige w-full">
                 Introducing Your Luxury Automated Coffee Solution
             </h2>
 
-            <p class="body_txt responsive-padding  md:pl-10">
+            <p class="body_txt responsive-padding md:pl-10">
                 illy Caffè North America and Prepango, a national operator of specialty vending machines, have partnered to introduce an innovative automated espresso coffee concept—marking the first of its kind for both illy and Prepango in the USA.<br><br>
                 Unlike traditional coffee vending machines that serve instant coffee, our machines grind, brew, and serve illy’s signature blend of
                 <span class="text-primary-red">100% Arabica</span> whole beans sourced from around the world, delivering a premium coffee experience.
             </p>
         </div>
 
-        <div class="flex justify-end md:h-[538px] order-2 sm:order-1">
-            <img class="Image md:w-full  relative"src="{{ asset('images/program/satisfaction_2.jpg') }}" alt="Coffee Machine" />
+        <div class="flex justify-end w-full sm:order-1 md:h-[518px]">
+            <img class="md:h-auto w-full relative" src="{{ asset('images/program/satisfaction_2.jpg') }}" alt="Coffee Machine">
         </div>
     </div>
+
     <div class="flex flex-col md:flex-row items-center w-full h-[296px] md:h-[215px] px-10 py-[62px] bg-fade justify-center text-center">
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 h-[90%]">
             <div class="flex flex-col md:flex-row items-center justify-start md:gap-4">
                 <div class="header_1 text-white md:gap-4  md:mb-0">Treat your people</div>
                 <div class="flex items-center md:gap-4">
@@ -50,7 +51,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 ">
 
         <div class="flex justify-center order-2 sm:order-1">
-            <img class="w-full  h-[452px] md:h-[860px] object-cover" src="{{ asset('images/program/satisfaction_1.png') }}" alt="Coffee Machine" >
+            <img class="w-full  h-[452px] md:h-[661px] object-cover" src="{{ asset('images/program/satisfaction_1.png') }}" alt="Coffee Machine" >
         </div>
 
         <div class="flex flex-col items-center  text-left order-1 sm:order-2 ">
@@ -142,30 +143,30 @@
             <!-- Paso 1 -->
             <div class="flex flex-col pl-5 md:pl-0">
                 <h2 class="header_2 md:pt-0 pl-0">
-                    <span class="text-primary-red font-bold">1 </span>
+                    <span class="text-primary-red font-bold pr-[18px]">1 </span>
                     Connect
                 </h2>
-                <p class="body_txt responsive-padding pl-0">
+                <p class="body_txt responsive-padding pl-0 py-2">
                     Connect with us to select the perfect program tailored to your needs and budget.
                 </p>
             </div>
             <!-- Paso 2 -->
             <div class="flex flex-col pl-5">
                 <h2 class="header_2 md:pt-0 pl-0">
-                    <span class="text-primary-red font-bold">2 </span>
+                    <span class="text-primary-red font-bold pr-[18px]">2 </span>
                     Select
                 </h2>
-                <p class="body_txt responsive-padding pl-0">
+                <p class="body_txt responsive-padding pl-0 py-2">
                     Choose your ideal location, and we’ll handle everything: installation, manages refills, cleaning, monitoring, and maintenance - all to ensure a seamless operation.
                 </p>
             </div>
             <!-- Paso 3 -->
             <div class="flex flex-col pl-5">
-                <h2 class="header_2 md:pt-0 pl-0">
-                    <span class="text-primary-red font-bold">3 </span>
+                <h2 class="header_2 md:pt-0 pl-0  ">
+                    <span class="text-primary-red font-bold pr-[18px]">3 </span>
                     Gain
                 </h2>
-                <p class="body_txt responsive-padding pl-0">
+                <p class="body_txt responsive-padding pl-0 py-2">
                     We’ll send detailed reports to keep you informed while enjoying flexible service agreements and smooth transactions.
                 </p>
             </div>

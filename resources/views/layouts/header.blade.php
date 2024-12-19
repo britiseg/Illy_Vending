@@ -15,7 +15,7 @@
 
 
 <!-- Barra de navegación con flechas -->
-<div class="hidden-navbar fixed top-[3.5rem] md:top-[34px] left-0 w-full z-20" id="navbar">
+<div class="hidden-navbar fixed top-[3.5rem] md:top-[54px] left-0 w-full z-20" id="navbar">
     <x-navbar-with-arrows
     :id="'navbar'"
     :links="[
@@ -55,11 +55,11 @@
             <!-- Columna para el texto (solo en versiones no móviles) -->
             <div class=" absolute hidden lg:flex md:flex  flex-col h-[369px] w-full items-center justify-center text-center gap-4 ">
                 <div class="flex items-center gap-4 justify-center text-center pt-[7%] pb-[4%]">
-                    <div class="header_1 text-white">Prepango Brings the</div>
+                    <div class="header_1 text-white text-[60px]">Prepango Brings the</div>
                     <div class="flex items-center gap-2">
-                        <div class="header_1 text-white">Luxury of</div>
-                        <div class="w-[83px] h-[55px] bg-no-repeat bg-center bg-contain" style="background-image: url('{{ asset('images/illy_red.svg') }}');"></div>
-                        <div class="header_1 text-white">to You</div>
+                        <div class="header_1 text-white text-[60px]">Luxury of</div>
+                        <div class="w-[83px] h-[55px] bg-no-repeat bg-center bg-contain md:mt-[21px]" style="background-image: url('{{ asset('images/illy_red.svg') }}');"></div>
+                        <div class="header_1 text-white text-[60px]">to You</div>
                     </div>
                 </div>
             </div>
