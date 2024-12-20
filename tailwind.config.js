@@ -11,6 +11,9 @@ module.exports = {
             fontFamily: {
                 manrope: ['Manrope', 'ui-sans-serif', 'system-ui'],
             },
+            spacing: {
+                12: "3rem",
+            },
             fontSize: {
                 16: '16px',
                 20: '20px',

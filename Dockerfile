@@ -49,6 +49,11 @@ RUN npm install
 # Instalar Vite y sus dependencias
 RUN npm install vite --save-dev
 
+# Instalar dependencias de Node.js
+RUN npm install --legacy-peer-deps
+RUN npm install intl-tel-input
+
+
 # Instalar Tailwind CSS, PostCSS y Autoprefixer
 RUN npm install tailwindcss postcss autoprefixer --save-dev
 

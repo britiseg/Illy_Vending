@@ -344,17 +344,17 @@ html, body {
     align-items: center;
 
     /* position: fixed; */
-    margin-left:33.3%;
+    /* margin-left:33.3%; */
     margin-top: 3rem;
 
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     z-index: 10;
 
     /* Estilo para pantallas grandes (Web) */
     @media (min-width: 1688px) {
         width: 631px;
         top: 6.5rem;
-        left:33.3%;
+        /* left:33.3%; */
     }
 
     /* Estilo para tablets */
@@ -399,6 +399,21 @@ html, body {
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
     background-color: #D12420; /* Color al hacer hover */
+}
+#phone {
+    background: transparent !important;
+}
+
+.iti__flag-container {
+    margin-left: 0 !important; /* Ajusta si el diseño se descompone */
+}
+
+.peer-placeholder-shown {
+    transform: translateY(0) scale(1);
+}
+
+.peer-focus {
+    transform: translateY(-1.5rem) scale(0.75);
 }
 
 

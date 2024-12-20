@@ -15,6 +15,11 @@ export default defineConfig({
             host: 'localhost', // Mantén localhost para HMR
         },
     },
+    resolve: {
+        alias: {
+            'intl-tel-input': '/node_modules/intl-tel-input/build/js/intlTelInput.js',
+        },
+    },
     build: {
         sourcemap: false,
     }

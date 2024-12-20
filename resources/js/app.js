@@ -1,9 +1,33 @@
 // resources/js/app.js
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
+import intlTelInput from '/node_modules/intl-tel-input/build/js/intlTelInput.js';
+import '/node_modules/intl-tel-input/build/css/intlTelInput.css';
+
 
 
 import './bootstrap';
+
+document.addEventListener("DOMContentLoaded", function() {
+    const phoneInput = document.querySelector("#phone");
+
+    if (phoneInput) {
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "us",
+            preferredCountries: ["us", "gb", "fr", "es", "it"],
+            separateDialCode: true,
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
+        });
+
+        // Forzar el placeholder manualmente para mantener la animación de Tailwind
+        phoneInput.addEventListener("countrychange", function() {
+            phoneInput.setAttribute("placeholder", " ");
+        });
+    }
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll(".section"); // Selecciona solo las secciones relevantes
     const navItems = document.querySelectorAll(".nav-item"); // Todos los items de navegación

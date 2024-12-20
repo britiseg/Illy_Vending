@@ -16,7 +16,7 @@
         </div>
 
         <div class="flex justify-end w-full sm:order-1 md:h-[518px]">
-            <img class="md:h-auto w-full relative" src="{{ asset('images/program/satisfaction_2.jpg') }}" alt="Coffee Machine">
+            <img class="md:h-auto w-full relative object-cover" src="{{ asset('images/program/satisfaction_2.jpg') }}" alt="Coffee Machine">
         </div>
     </div>
 
