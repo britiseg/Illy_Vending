@@ -14,9 +14,9 @@
     <!-- Styles: Vite compilará y servirá estos archivos CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('build/assets/app-BiezSCcy.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CSz_p1H9.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-CVUjKX9z.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css">
-    <script src="{{ asset('build/assets/app-BQzSXw.js') }}" defer></script>
+    <script src="{{ asset('build/assets/app-DW6XtQq2.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
 
 

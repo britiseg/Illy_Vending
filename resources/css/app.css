@@ -367,7 +367,7 @@ html, body {
     /* Estilo para móviles */
     @media (max-width: 758px) {
         width: 100% !important;
-      top: 5.6rem !important;
+      /* top: 5.6rem !important; */
       left: 10.8rem !important;
     }
 }
